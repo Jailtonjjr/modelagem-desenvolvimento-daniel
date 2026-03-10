@@ -10,12 +10,19 @@ Biblioteca universitária
 Grupo (nomes):
 
 Beatriz Gasparini Menezes RA: 3026103855
+
 Jailton Sousa de Lima   	 RA: 3023104935 
+
 Leandro de Sá Costa   	 RA: 3024202588
+
 Matheus Osmédio Araujo 	 RA: 3024102070
+
 Matheus Souza Araujo	 RA: 3023101715
+
 Nicolas Masayoshi Urata 	 RA: 3026102723
+
 Versão/data:
+
 2.4 - 09/03/2026
 
 3. Visão geral da empresa
@@ -100,7 +107,9 @@ Dentro do escopo (IN):
 
 1 - Não pode ter empréstimo da mesma cópia do livro para pessoas distintas
 
+
 2 - A pessoa não pode pegar ou reservar mais de uma cópia do mesmo livro
+
 
 3 - Limitar empréstimo de 5 livros por pessoa
 
