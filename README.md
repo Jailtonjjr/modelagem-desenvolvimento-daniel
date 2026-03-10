@@ -125,27 +125,47 @@ Empréstimo bloqueado - Roberta Carla estava com uma pendência de um livro e te
 Escrevam 2 fluxos no formato passo a passo:
 Cenário 1: Fluxo principal
 1 - Cliente chega
+    
 2 - Verifica se o cadastro já existe
+
 Se o cadastro já existe pule para etapa 8
+
 Se não tiver cadastro continua as etapas seguintes
+
 3 - Cadastrar cliente
+
 4 - Verificar a matrícula no sistema da universidade
+
 Se não, mostrar erro de matrícula inválida
+
 5 - Verifica o email no regex
+
 Se não, mostrar erro de email invalido
+
 6 - Verifica o telefone no regex
+
 Se não, mostrar erro de telefone invalido
+
 7 - Cadastrado com sucesso
+
 8 - Continue com o empréstimo/reserva 
+
 
 Cenário 2: Empréstimo/reserva
 1 - Cliente pede um livro 
+
 2 - Verifica se o livro está disponível no catálogo para empréstimo
+
 Se tiver no catálogo siga para próxima etapa
+
 Se não, mostrar livro indisponível
+
 3 - Pede cadastro do cliente
+
 4 - Efetue o empréstimo do livro
+
 Se há pendências negar empréstimo
+
 Se não, realizar empréstimo
 
 
