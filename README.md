@@ -50,90 +50,90 @@ Agilidade nos processos de cadastro, empréstimo e devolução.
 Controle rigoroso e em tempo real da disponibilidade e do estado dos livros (gerenciamento de dados).
 Melhoria na experiência de atendimento ao público, com respostas rápidas sobre o acervo.
 
-6. Stakeholders e perfis de usuário
+5. Stakeholders e perfis de usuário
 Atendentes: Responsáveis pela operação diária. Necessitam de uma interface extremamente amigável e intuitiva. Realizam empréstimos, devoluções, consultas básicas de disponibilidade e cadastros de novos usuários.
 Bibliotecário: Responsável pela gestão e suporte do sistema. Além das permissões de atendente, pode cadastrar novos livros no acervo, inativar exemplares perdidos/danificados e acessar relatórios de gestão (como livros em atraso).
 
-7. Escopo do sistema (IN / OUT)
+6. Escopo do sistema (IN / OUT)
 
 Dentro do escopo (IN):
 
-1 - Cadastro de livros
+   1 - Cadastro de livros
+   
+   2 - Cadastro de usuário
+   
+   3 - Empréstimo de livros 
+   
+   4- Catálogo de livros
+   
+   5 - Devolução de livros
+   
+   6 - Reservas de livros
+   
+   7 - Cadastro de administradores
+   
+   8 - Sistema de bloqueio temporário de empréstimo por atraso de livros
 
-2 - Cadastro de usuário
 
-3 - Empréstimo de livros 
-
-4- Catálogo de livros
-
-5 - Devolução de livros
-
-6 - Reservas de livros
-
-7 - Cadastro de administradores
-
-8 - Sistema de bloqueio temporário de empréstimo por atraso de livros
-
-
- Fora do escopo (OUT): 
+Fora do escopo (OUT): 
  
-1 - Envio de emails
-
-2 - Reserva Online
-
-3 - Vendas de livros
-
-4 - Sistema de multas monetária  por atraso na devolução
-
-5 - Sistema de renovação de livro
+   1 - Envio de emails
+   
+   2 - Reserva Online
+   
+   3 - Vendas de livros
+   
+   4 - Sistema de multas monetária  por atraso na devolução
+   
+   5 - Sistema de renovação de livro
 
 
 7. Requisitos Funcionais (RF)
 
-1 - Cadastrar clientes com campos obrigatórios (Id, nome, telefone, matricula, email, logradouro)
-
-2 - Cadastro de livros
-
-3 - Empréstimo de livros
-
-4 - Devolução de livros
-
-5 - Reservas de livros
-
-6 - Sistema de bloqueio temporário de empréstimo por atraso de livros
-
-
-9. Regras de Negócio (RN)
-
-1 - Não pode ter empréstimo da mesma cópia do livro para pessoas distintas
+   1 - Cadastrar clientes com campos obrigatórios (Id, nome, telefone, matricula, email, logradouro)
+   
+   2 - Cadastro de livros
+   
+   3 - Empréstimo de livros
+   
+   4 - Devolução de livros
+   
+   5 - Reservas de livros
+   
+   6 - Sistema de bloqueio temporário de empréstimo por atraso de livros
 
 
-2 - A pessoa não pode pegar ou reservar mais de uma cópia do mesmo livro
+8. Regras de Negócio (RN)
+
+   1 - Não pode ter empréstimo da mesma cópia do livro para pessoas distintas
+   
+   
+   2 - A pessoa não pode pegar ou reservar mais de uma cópia do mesmo livro
+   
+   
+   3 - Limitar empréstimo de 5 livros por pessoa
+   
+   4 - Limitar reserva a 2 livros por pessoa  
+   
+   5 - Realizar empréstimos apenas para pessoas cadastradas
+   
+   6 - A mesma pessoa não pode ter mais de um cadastro
+   
+   7 - Limitar o tempo do empréstimo do livro a 10 dias
 
 
-3 - Limitar empréstimo de 5 livros por pessoa
 
-4 - Limitar reserva a 2 livros por pessoa  
+9. Requisitos Não Funcionais (RNF) e restrições técnicas
 
-5 - Realizar empréstimos apenas para pessoas cadastradas
-
-6 - A mesma pessoa não pode ter mais de um cadastro
-
-7 - Limitar o tempo do empréstimo do livro a 10 dias
-
-
-
-10. Requisitos Não Funcionais (RNF) e restrições técnicas
-
-1 - Interface simples e consistente (computador)
-
-2 - banco de dados local
-
-3 - mostrar status dos livros
-
-4 - Cadastro máximo de 20000 livros
-
-5 - Cadastro máximo de 5000 clientes
+   1 - Interface simples e consistente (computador)
+   
+   2 - banco de dados local
+   
+   3 - mostrar status dos livros
+   
+   4 - Cadastro máximo de 20000 livros
+   
+   5 - Cadastro máximo de 5000 clientes
 
 
 10. Obstáculos, riscos e restrições do mundo real
@@ -146,17 +146,17 @@ Riscos: sobrecarga do sistema, treinamento, erro no backup
 
 11. Dados principais (entidades) e relacionamentos esperados
 
-1 - Reserva(id, id_livro, id_cliente, data_hora)
-
-2 - Livro(id, título, autor ,gênero, quantidade)	
-
-3 - Empréstimo(id, id_livro, id_cliente, id_funcionario, data_retirada, data_devolucao_esperada)
-
-4 - Cliente(Id, nome, telefone, matricula, email, logradouro)
-
-5 - Funcionário(Id, nome, telefone, email, senha)
-
-6 - Devolução(id, id_livro, id_cliente, id_funcionario, data_devolucao)
+   1 - Reserva(id, id_livro, id_cliente, data_hora)
+   
+   2 - Livro(id, título, autor ,gênero, quantidade)	
+   
+   3 - Empréstimo(id, id_livro, id_cliente, id_funcionario, data_retirada, data_devolucao_esperada)
+   
+   4 - Cliente(Id, nome, telefone, matricula, email, logradouro)
+   
+   5 - Funcionário(Id, nome, telefone, email, senha)
+   
+   6 - Devolução(id, id_livro, id_cliente, id_funcionario, data_devolucao)
 
 12. Casos de uso (lista + breve descrição)
 
@@ -174,49 +174,49 @@ Empréstimo bloqueado - Roberta Carla estava com uma pendência de um livro e te
 
 Cenário 1: Fluxo principal
 
-1 - Cliente chega
-    
-2 - Verifica se o cadastro já existe
-
-Se o cadastro já existe pule para etapa 8
-
-Se não tiver cadastro continua as etapas seguintes
-
-3 - Cadastrar cliente
-
-4 - Verificar a matrícula no sistema da universidade
-
-Se não, mostrar erro de matrícula inválida
-
-5 - Verifica o email no regex
-
-Se não, mostrar erro de email invalido
-
-6 - Verifica o telefone no regex
-
-Se não, mostrar erro de telefone invalido
-
-7 - Cadastrado com sucesso
-
-8 - Continue com o empréstimo/reserva 
+   1 - Cliente chega
+       
+   2 - Verifica se o cadastro já existe
+      
+      Se o cadastro já existe pule para etapa 8
+      
+      Se não tiver cadastro continua as etapas seguintes
+   
+   3 - Cadastrar cliente
+   
+   4 - Verificar a matrícula no sistema da universidade
+   
+      Se não, mostrar erro de matrícula inválida
+   
+   5 - Verifica o email no regex
+   
+      Se não, mostrar erro de email invalido
+   
+   6 - Verifica o telefone no regex
+   
+      Se não, mostrar erro de telefone invalido
+   
+   7 - Cadastrado com sucesso
+   
+   8 - Continue com o empréstimo/reserva 
 
 
 Cenário 2: Empréstimo/reserva
 
-1 - Cliente pede um livro 
-
-2 - Verifica se o livro está disponível no catálogo para empréstimo
-
-Se tiver no catálogo siga para próxima etapa
-
-Se não, mostrar livro indisponível
-
-3 - Pede cadastro do cliente
-
-4 - Efetue o empréstimo do livro
-
-Se há pendências negar empréstimo
-
-Se não, realizar empréstimo
-
+   1 - Cliente pede um livro 
+   
+   2 - Verifica se o livro está disponível no catálogo para empréstimo
+   
+      Se tiver no catálogo siga para próxima etapa
+      
+      Se não, mostrar livro indisponível
+   
+   3 - Pede cadastro do cliente
+   
+   4 - Efetue o empréstimo do livro
+   
+      Se há pendências negar empréstimo
+      
+      Se não, realizar empréstimo
+   
 
