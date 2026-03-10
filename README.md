@@ -123,7 +123,9 @@ Empréstimo bloqueado - Roberta Carla estava com uma pendência de um livro e te
 
 13. Cenários de uso (2 cenários completos)
 Escrevam 2 fluxos no formato passo a passo:
+
 Cenário 1: Fluxo principal
+
 1 - Cliente chega
     
 2 - Verifica se o cadastro já existe
@@ -152,6 +154,7 @@ Se não, mostrar erro de telefone invalido
 
 
 Cenário 2: Empréstimo/reserva
+
 1 - Cliente pede um livro 
 
 2 - Verifica se o livro está disponível no catálogo para empréstimo
