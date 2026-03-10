@@ -27,7 +27,7 @@ Versão/data:
 
 3. Visão geral da empresa
 
-Em uma universidade há uma biblioteca da qual efetua mais de 70 empréstimos de livros todos os dias funcionais, mas devido a alta demanda acaba gerando problemas nesse serviço, onde por ser feito de maneira manual acaba tendo a perda de informações e confusão no controle de empréstimo.
+Em uma universidade há uma biblioteca da qual os seus dias de funcionamento é segunda a sexta e fica aberto das 8:00 horas da manhã até 22:00 horas da noite, está biblioteca efetua mais de 70 empréstimos de livros todos os dias funcionais, mas devido a alta demanda acaba gerando problemas nesse serviço, onde por ser feito de maneira manual acaba tendo a perda de informações e confusão no controle de empréstimo.
 Após muita insistência dos administradores da biblioteca, os donos da universidade decidiram fazer algo sobre isso e foram em busca de modernizar a biblioteca trazendo computadores e contratando pessoas para desenvolver um sistema do qual ficaria responsável de atender as demandas da biblioteca.
 
 4. Problema atual (dor) e consequências
@@ -51,8 +51,8 @@ Controle rigoroso e em tempo real da disponibilidade e do estado dos livros (ger
 Melhoria na experiência de atendimento ao público, com respostas rápidas sobre o acervo.
 
 5. Stakeholders e perfis de usuário
-Atendentes: Responsáveis pela operação diária. Necessitam de uma interface extremamente amigável e intuitiva. Realizam empréstimos, devoluções, consultas básicas de disponibilidade e cadastros de novos usuários.
-Bibliotecário: Responsável pela gestão e suporte do sistema. Além das permissões de atendente, pode cadastrar novos livros no acervo, inativar exemplares perdidos/danificados e acessar relatórios de gestão (como livros em atraso).
+Atendentes: Na biblioteca há seis responsáveis pela operação diária. Necessitam de uma interface extremamente amigável e intuitiva. Realizam empréstimos, devoluções, consultas básicas de disponibilidade e cadastros de novos usuários.
+Bibliotecários: Na biblioteca há dois responsáveis pela gestão e suporte do sistema. Além das permissões de atendente, pode cadastrar novos livros no acervo, inativar exemplares perdidos/danificados e acessar relatórios de gestão (como livros em atraso).
 
 6. Escopo do sistema (IN / OUT)
 
@@ -183,22 +183,19 @@ Cenário 1: Fluxo principal
       Se não tiver cadastro continua as etapas seguintes
    
    3 - Cadastrar cliente
+
    
-   4 - Verificar a matrícula no sistema da universidade
-   
-      Se não, mostrar erro de matrícula inválida
-   
-   5 - Verifica o email no regex
+   4 - Verifica o email no regex
    
       Se não, mostrar erro de email invalido
    
-   6 - Verifica o telefone no regex
+   5 - Verifica o telefone no regex
    
       Se não, mostrar erro de telefone invalido
    
-   7 - Cadastrado com sucesso
+   6 - Cadastrado com sucesso
    
-   8 - Continue com o empréstimo/reserva 
+   7 - Continue com o empréstimo/reserva 
 
 
 Cenário 2: Empréstimo/reserva
