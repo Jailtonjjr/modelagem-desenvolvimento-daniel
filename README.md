@@ -2,19 +2,28 @@
 
 1. Identificação do projeto
 Nome do projeto:
-Biblioteca universitária
+Biblioteca da Universidade Federal Do Saber
 
 Grupo (nomes):
-Beatriz Gasparini Menezes RA: 3026103855
-Enzo Lima Da Silva             RA: 3126102798
-Jailton Sousa de Lima   	 RA: 3023104935 
-Leandro de Sá Costa   	 RA: 3024202588
-Matheus Osmédio Araujo 	 RA: 3024102070
-Matheus Souza Araujo	 RA: 3023101715
-Nicolas Masayoshi Urata 	 RA: 3026102723
+
+Beatriz Gasparini Menezes  RA: 3026103855
+
+Enzo Lima Da Silva         RA: 3126102798
+
+Jailton Sousa de Lima   	  RA: 3023104935 
+
+Leandro de Sá Costa   	    RA: 3024202588
+
+Matheus Osmédio Araujo   	 RA: 3024102070
+
+Matheus Souza Araujo	      RA: 3023101715
+
+Nicolas Masayoshi Urata 	  RA: 3026102723
+
 
 
 Versão/data:
+
 3.4 - 11/03/2026
 
 2. Visão geral da empresa (contexto)
